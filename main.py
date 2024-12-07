@@ -191,7 +191,8 @@ with tab2:
         "Keyword Optimization",
         "ATS Compliance Check",
         "Cover Letter Generator",
-        "Detailed Match Analysis"
+        "Detailed Match Analysis",
+        "Craft New Resume"
     ]
 
     feature_options_translated = [translate_text(option, selected_lang_code) for option in feature_options]
@@ -406,6 +407,28 @@ with tab2:
             **Provide the report in a structured format, using headings and bullet points for clarity.**
             """
 
+            # Feature 8: Craft New Resume (New Feature)
+            input_prompt8 = f"""
+                        You are an expert resume writer.
+
+                        **Instructions:**
+
+                        - Review the candidate's resume and the provided job description.
+                        - **Enhance the resume by incorporating relevant keywords and improving grammatical structure to better align with the job description.**
+                        - **Do not add any new skills, experiences, or qualifications not present in the original resume.**
+                        - **Do not remove any existing content.**
+                        - Ensure that the resume remains truthful and accurately represents the candidate's qualifications.
+                        - **Focus on rephrasing sentences to include important keywords from the job description and improving overall readability**
+
+                        **Resume:**
+                        {resume_text}
+
+                        **Job Description:**
+                        {jd}
+
+                        **Provide the updated resume below with improved keyword integration and grammar.**
+                        """
+
             # Map the selected feature to the corresponding prompt and subheader
             feature_prompt_mapping = {
                 "Skill Gap Analysis": (input_prompt1, "Skill Gap Analysis"),
@@ -413,7 +436,8 @@ with tab2:
                 "Keyword Optimization": (input_prompt3, "Keyword Optimization Suggestions"),
                 "ATS Compliance Check": (input_prompt4, "ATS Compliance Report"),
                 "Cover Letter Generator": (input_prompt5, "Generated Cover Letter"),
-                "Detailed Match Analysis": (input_prompt7, "Detailed Match Analysis Report")
+                "Detailed Match Analysis": (input_prompt7, "Detailed Match Analysis Report"),
+                "Craft New Resume": (input_prompt8, "Crafted Resume")
             }
 
             # Get the original feature name based on the selected translated feature
