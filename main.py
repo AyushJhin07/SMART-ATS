@@ -289,10 +289,10 @@ with tab2:
             - Do not recommend removing any relevant content.
 
             **Resume:**
-            {resume_text}
+            {resume_text_translated}
 
             **Job Description:**
-            {jd}
+            {jd_translated}
 
             **Provide your recommendations in a numbered list, clearly indicating where changes should be made.**
             """
@@ -315,10 +315,10 @@ with tab2:
             - **Ensure the suggestions are integrated seamlessly and naturally.**
 
             **Resume:**
-            {resume_text}
+            {resume_text_translated}
 
             **Job Description:**
-            {jd}
+            {jd_translated}
 
             **Provide your suggestions in detail, indicating the resume sections where keywords can be added or emphasized.**
             """
@@ -344,7 +344,7 @@ with tab2:
             - **For each issue identified, provide a clear recommendation on how to fix it.**
 
             **Resume:**
-            {resume_text}
+            {resume_text_translated}
 
             **Provide your analysis and recommendations in a clear, concise manner, organized by issue.**
             """
@@ -367,10 +367,10 @@ with tab2:
             - **Do not include any fake or exaggerated information.**
 
             **Resume:**
-            {resume_text}
+            {resume_text_translated}
 
             **Job Description:**
-            {jd}
+            {jd_translated}
 
             **Provide the cover letter below.**
             """
@@ -399,10 +399,10 @@ with tab2:
             - Do not include any fake information.
 
             **Resume:**
-            {resume_text}
+            {resume_text_translated}
 
             **Job Description:**
-            {jd}
+            {jd_translated}
 
             **Provide the report in a structured format, using headings and bullet points for clarity.**
             """
@@ -421,10 +421,10 @@ with tab2:
                         - **Focus on rephrasing sentences to include important keywords from the job description and improving overall readability**
 
                         **Resume:**
-                        {resume_text}
+                        {resume_text_translated}
 
                         **Job Description:**
-                        {jd}
+                        {jd_translated}
 
                         **Provide the updated resume below with improved keyword integration and grammar.**
                         """
